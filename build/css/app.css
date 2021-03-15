@@ -1,0 +1,158 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+:root {
+	/* Type font */
+	--main-font: 'PT Serif', serif;
+	--second-font: 'Poppins', sans-serif;
+	--third-font: 'Montserrat', sans-serif;
+
+	/* Fonts */
+	--regular-font: 400;
+	--semi-font: 600;
+	--bold-font: 700;
+
+	/* Colors */
+	--background-color: #fafafa;
+	--black: #000000;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.container {
+	max-width: 120rem;
+	width: 95%;
+	margin: 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-family: var(--main-font);
+	font-size: 3.6rem;
+}
+
+h2 {
+	font-family: var(--second-font);
+	font-weight: var(--semi-font);
+	font-size: 1.8rem;
+}
+
+p {
+	font-family: var(--second-font);
+	font-size: 1.4rem;
+}
+
+/* INDEX */
+
+/* SECTION */
+
+.text {
+	margin-top: 4rem;
+}
+
+section p {
+	margin-top: 1rem;
+	font-family: var(--second-font);
+	font-weight: var(--regular-font);
+	line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+	section {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	section p {
+		width: 43rem;
+		font-size: 1.8rem;
+	}
+}
+
+/* GALLERY */
+
+.gallery {
+	margin-top: 5rem;
+	display: grid;
+	place-items: center;
+	gap: 2rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.item:nth-child(2n) {
+	margin-top: 5rem;
+}
+
+.item__img {
+	width: 138.72px;
+	height: 209px;
+}
+
+.item__title {
+	position: relative;
+	bottom: 22rem;
+	left: 15rem;
+	transform-origin: 0%;
+	transform: rotate(90deg);
+	text-transform: uppercase;
+	font-family: var(--main-font);
+	font-size: 1rem;
+}
+
+.item__name {
+	font-weight: var(--semi-font);
+	font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+	.gallery {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.item:nth-child(2n) {
+		margin-top: 0;
+	}
+
+	.item:nth-child(3n-1) {
+		margin-top: 5rem;
+	}
+
+	.item__img {
+		width: 238px;
+		height: 347px;
+	}
+
+	.item__title {
+		bottom: 35.7rem;
+		left: 25rem;
+		font-size: 1.2rem;
+	}
+	.item__name {
+		font-size: 1.8rem;
+	}
+}
+
+footer {
+	margin-top: 5rem;
+}
+
+.footer__copy {
+	text-align: center;
+}
