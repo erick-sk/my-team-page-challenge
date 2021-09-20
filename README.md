@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://https://elastic-neumann-107e1b.netlify.app/">
+    <a href="https://fervent-brahmagupta-30b5b2.netlify.app/">
       Demo
     </a>
     <span> | </span>
@@ -24,6 +24,6 @@
 
 ## Contact
 
-- Website [your-website.com](https://ericksaavedra.dev)
-- GitHub [@your-username](https://github.com/your-erick.sk)
-- Twitter [@your-twitter](https://twitter.com/your-ericksk_)
+- Website: [ericksaavedra.me](https://ericksaavedra.me)
+- GitHub: [@erick-sk](https://github.com/erick-sk)
+- Twitter: [@ericksk_](https://twitter.com/ericksk_)
